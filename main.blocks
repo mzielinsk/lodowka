@@ -1,0 +1,16 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="mJvJcAfZfoZayZ$@!?w@" x="0" y="0"><comment pinned="false" h="80" w="160">dht11_dht22.query_data(DHTtype.DHT11, DigitalPin.P0, False, False, True)
+while pins.analog_read_pin(AnalogPin.P0) &gt; 500:
+for index in range(20):
+pass</comment><statement name="HANDLER"><block type="controls_if" id="iw$MoFrv/n}rW#/yiZHc"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="SvJlCH*Y7(hg/a5f:|V*"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="}v}.-Od@T%M84ew`/ZgX"><field name="name">AnalogPin.P0</field></block></value><value name="B"><shadow type="math_number" id="p8^{M-s?NNGKXc;kmv-L"><field name="NUM">500</field></shadow></value></block></value><statement name="DO0"><block type="device_print_message" id="pQ{Orbf[JzwiPQUZ{(MW"><value name="text"><shadow type="text" id="Q}L[YOK,ktVQP,D_}$Q8"><field name="TEXT">AAA</field></shadow></value><next><block type="device_set_analog_pin" id="5@7OqtuPa);!!ci~{6|Q"><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="]$I9(mfL/V/:=1o2|jPD"><mutation min="0" max="1023" label="Number" precision="0"></mutation><field name="SLIDER">500</field></shadow></value><next><block type="controls_if" id="1_Z];i}O:z:g(|:vu~/,"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="WRV3.drHqv$zJ=WbT~#$"><field name="NAME">Button.A</field></block></value><statement name="DO0"><block type="device_show_leds" id="g[J!kTs@_.IiU4+U!I/%"><field name="LEDS">`
+        # # . . . 
+        . # . . . 
+        . # . . . 
+        . # # # . 
+        . # . # .
+        `</field></block></statement></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="yyE}#bojv7k}E}Wd4a[)"><field name="LEDS">`
+        # # . . . 
+        . # . . . 
+        . # . . . 
+        . # # # . 
+        . # . # .
+        `</field></block></statement></block></statement></block></xml>
